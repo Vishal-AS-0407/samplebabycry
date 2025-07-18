@@ -184,7 +184,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Static API key (replace with your actual API key)
-GEMINI_API_KEY = "your_gemini_api_key_here"
+GEMINI_API_KEY = "AIzaSyAjhjE1-c6vcFixyO6lOIHQUE8a15peRd0"
 
 # Configure Gemini API
 def configure_gemini(api_key):
