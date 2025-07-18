@@ -193,7 +193,7 @@ def configure_gemini(api_key):
 
 # Load the saved model
 def load_model(model_path='baby_cry_model.pkl'):
-    with open(r"D:\SEM6\Speech Processing\endsem\final\baby_cry_model2.pkl", 'rb') as f:
+    with open(r"baby_cry_model2.pkl", 'rb') as f:
         model_info = pickle.load(f)
     
     print(f"Loaded model with {len(model_info['class_names'])} classes: {model_info['class_names']}")
