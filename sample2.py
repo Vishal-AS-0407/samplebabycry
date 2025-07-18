@@ -503,26 +503,7 @@ def main():
                         
                         st.markdown('</div>', unsafe_allow_html=True)
                         
-                        # Probability breakdown
-                        st.markdown('<div class="info-card">', unsafe_allow_html=True)
-                        st.markdown('<h3 class="section-header">📈 Probability Breakdown</h3>', unsafe_allow_html=True)
-                        
-                        for class_name, prob in result['probabilities'].items():
-                            st.markdown(f"""
-                            <div class="probability-item">
-                                <strong>{class_name}:</strong> {prob:.1f}%
-                            </div>
-                            """, unsafe_allow_html=True)
-                        
-                        st.markdown('</div>', unsafe_allow_html=True)
-                        
-                        # Collect baby info for context
-                        baby_info = {
-                            "age": baby_age,
-                            "recent_feedings": recent_feedings,
-                            "sleep_pattern": sleep_pattern
-                        }
-                        
+
                         # Generate and display recommendations
                         st.markdown('<div class="recommendation-card">', unsafe_allow_html=True)
                         st.markdown('<h3 class="section-header">💡 Personalized Recommendations</h3>', unsafe_allow_html=True)
